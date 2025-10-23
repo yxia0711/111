@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Data Vault - Join</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="pixel-text">THE DATA VAULT</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="how-it-works.html" class="nav-link">HOW IT WORKS</a>
+                <a href="security.html" class="nav-link">SECURITY</a>
+                <a href="join.html" class="nav-link active">JOIN</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="main-title">JOIN THE VAULT</h1>
+                    <p class="hero-subtitle">Secure your digital life today</p>
+                </div>
+                <div class="hero-visual">
+                    <div class="vault-door">
+                        <div class="door-frame">
+                            <div class="door-panel">
+                                <div class="door-handle"></div>
+                                <div class="door-lock"></div>
+                            </div>
+                        </div>
+                        <div class="access-indicator">
+                            <span class="indicator-text">ACCESS GRANTED</span>
+                            <div class="indicator-light"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Plans Section -->
+        <section class="pricing-section">
+            <div class="container">
+                <h2 class="section-title">CHOOSE YOUR PLAN</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h3>BASIC</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">9</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>10GB Storage</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>End-to-End Encryption</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>2 Device Access</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Basic Support</span>
+                            </div>
+                        </div>
+                        <button class="plan-button" onclick="selectPlan('basic')">
+                            <span class="button-text">SELECT BASIC</span>
+                        </button>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="plan-badge">MOST POPULAR</div>
+                        <div class="plan-header">
+                            <h3>PROFESSIONAL</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">19</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>100GB Storage</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Advanced Encryption</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>5 Device Access</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Priority Support</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Secure Sharing</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Activity Monitoring</span>
+                            </div>
+                        </div>
+                        <button class="plan-button" onclick="selectPlan('professional')">
+                            <span class="button-text">SELECT PRO</span>
+                        </button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h3>ENTERPRISE</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">49</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>1TB Storage</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Military-Grade Encryption</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Unlimited Devices</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>24/7 Support</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Team Management</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Custom Integrations</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Compliance Reporting</span>
+                            </div>
+                        </div>
+                        <button class="plan-button" onclick="selectPlan('enterprise')">
+                            <span class="button-text">SELECT ENTERPRISE</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section class="registration-section">
+            <div class="container">
+                <h2 class="section-title">CREATE YOUR ACCOUNT</h2>
+                <div class="registration-content">
+                    <div class="form-container">
+                        <form class="registration-form" id="registration-form">
+                            <div class="form-group">
+                                <label for="email">EMAIL ADDRESS</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="plan">SELECTED PLAN</label>
+                                <select id="plan" name="plan" required>
+                                    <option value="">Choose a plan</option>
+                                    <option value="basic">Basic - $9/month</option>
+                                    <option value="professional">Professional - $19/month</option>
+                                    <option value="enterprise">Enterprise - $49/month</option>
+                                </select>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">I agree to the Terms of Service and Privacy Policy</label>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                <span class="button-text">CREATE VAULT</span>
+                                <div class="button-glow"></div>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="form-sidebar">
+                        <div class="security-indicators">
+                            <h3>Security Features</h3>
+                            <div class="indicator-list">
+                                <div class="indicator-item">
+                                    <span class="indicator-icon">🔐</span>
+                                    <span>AES-256 Encryption</span>
+                                </div>
+                                <div class="indicator-item">
+                                    <span class="indicator-icon">🛡️</span>
+                                    <span>Zero-Knowledge Architecture</span>
+                                </div>
+                                <div class="indicator-item">
+                                    <span class="indicator-icon">⚡</span>
+                                    <span>2FA Support</span>
+                                </div>
+                                <div class="indicator-item">
+                                    <span class="indicator-icon">🔍</span>
+                                    <span>Activity Monitoring</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trust-badges">
+                            <h3>Trusted By</h3>
+                            <div class="badge-list">
+                                <div class="badge-item">SOC 2 Certified</div>
+                                <div class="badge-item">GDPR Compliant</div>
+                                <div class="badge-item">ISO 27001</div>
+                                <div class="badge-item">2.5M+ Users</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Message Section -->
+        <section class="success-section">
+            <div class="container">
+                <div class="access-message" id="access-message">
+                    <div class="success-animation">
+                        <div class="checkmark">
+                            <div class="checkmark-circle"></div>
+                            <div class="checkmark-check"></div>
+                        </div>
+                    </div>
+                    <div class="terminal-output">
+                        <span class="prompt-cursor">></span>
+                        <span class="prompt-text">Access granted. Your vault is open.</span>
+                    </div>
+                    <div class="success-details">
+                        <h3>Welcome to The Data Vault!</h3>
+                        <p>Your account has been created successfully. You can now start securing your digital life.</p>
+                        <div class="next-steps">
+                            <h4>Next Steps:</h4>
+                            <ul>
+                                <li>Download our mobile app</li>
+                                <li>Set up two-factor authentication</li>
+                                <li>Upload your first files</li>
+                                <li>Configure your security settings</li>
+                            </ul>
+                        </div>
+                        <div class="success-actions">
+                            <a href="how-it-works.html" class="action-button">
+                                <span class="button-text">GET STARTED</span>
+                            </a>
+                            <a href="security.html" class="action-button secondary">
+                                <span class="button-text">LEARN SECURITY</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">WHAT OUR USERS SAY</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Finally, a place where my data feels safe. The encryption is top-notch and the interface is intuitive."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/4.jpg" alt="User" class="author-image">
+                            <div class="author-info">
+                                <span class="author-name">Sarah Chen</span>
+                                <span class="author-title">Data Analyst</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The vault gives me peace of mind. My passwords and sensitive documents are finally secure."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/5.png" alt="User" class="author-image">
+                            <div class="author-info">
+                                <span class="author-name">Mike Rodriguez</span>
+                                <span class="author-title">Software Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"I sleep better knowing my data is encrypted. The team's commitment to privacy is impressive."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/6.jfif" alt="User" class="author-image">
+                            <div class="author-info">
+                                <span class="author-name">Emma Thompson</span>
+                                <span class="author-title">Privacy Advocate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+                <div class="faq-content">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is my data really secure?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, your data is protected by military-grade AES-256 encryption. We use zero-knowledge architecture, meaning even we cannot access your data.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I access my vault from multiple devices?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! You can access your vault from any device with our secure apps for desktop, mobile, and web.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What happens if I forget my password?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Due to our zero-knowledge architecture, we cannot reset your password. However, we provide secure recovery options and recommend using a password manager.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is there a free trial available?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We offer a 14-day free trial for all plans. No credit card required to get started.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/join.js"></script>
+</body>
+</html>

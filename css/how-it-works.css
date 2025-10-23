@@ -1,0 +1,523 @@
+/* How It Works Page Specific Styles */
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 6rem 2rem 2rem;
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.05), rgba(255, 0, 170, 0.05));
+}
+
+.hero-content {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #9CA3AF;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.process-flow {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba(0, 191, 255, 0.05);
+    border: 2px solid rgba(0, 191, 255, 0.3);
+    border-radius: 0;
+}
+
+.flow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(0, 191, 255, 0.1);
+    border: 1px solid rgba(0, 191, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.flow-step:hover {
+    background: rgba(0, 191, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.step-number {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.5rem;
+    color: #FF00AA;
+}
+
+.step-icon {
+    font-size: 2rem;
+    filter: grayscale(1) brightness(0.8);
+}
+
+.flow-arrow {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 2rem;
+    color: #00BFFF;
+    animation: pulse 2s infinite;
+}
+
+/* Steps Section */
+.steps-section {
+    padding: 6rem 2rem;
+    background: rgba(0, 191, 255, 0.02);
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.step-detailed {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 3rem;
+    background: rgba(0, 191, 255, 0.05);
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.step-detailed:hover {
+    border-color: #00BFFF;
+    background: rgba(0, 191, 255, 0.1);
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.3);
+}
+
+.step-detailed:nth-child(even) {
+    grid-template-columns: 2fr 1fr;
+}
+
+.step-detailed:nth-child(even) .step-visual {
+    order: 2;
+}
+
+.step-detailed:nth-child(even) .step-description {
+    order: 1;
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.step-number-large {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 3rem;
+    color: #FF00AA;
+    text-shadow: 0 0 20px #FF00AA;
+}
+
+.step-info h3 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.2rem;
+    color: #00BFFF;
+    margin-bottom: 0.5rem;
+}
+
+.step-subtitle {
+    font-size: 1rem;
+    color: #9CA3AF;
+    font-weight: 300;
+}
+
+.step-visual {
+    position: relative;
+    overflow: hidden;
+}
+
+.step-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: contrast(1.2) brightness(0.8) saturate(1.5);
+    image-rendering: pixelated;
+    border: 2px solid #00BFFF;
+}
+
+.step-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.step-visual:hover .step-overlay {
+    opacity: 1;
+}
+
+.terminal-prompt {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8rem;
+    color: #00BFFF;
+    text-align: center;
+}
+
+.upload-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 4px;
+    background: rgba(156, 163, 175, 0.3);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #00BFFF, #FF00AA);
+    width: 0;
+    animation: progress-loading 3s ease-in-out infinite;
+}
+
+@keyframes progress-loading {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+.progress-text {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    color: #00BFFF;
+}
+
+.security-indicators {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.security-icon {
+    font-size: 2rem;
+    filter: grayscale(1) brightness(0.8);
+}
+
+.security-text {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    color: #00BFFF;
+}
+
+.step-description h4 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8rem;
+    color: #00BFFF;
+    margin-bottom: 1rem;
+}
+
+.step-description p {
+    color: #9CA3AF;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.step-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.step-features li {
+    color: #9CA3AF;
+    font-size: 0.9rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.step-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #00BFFF;
+    font-weight: bold;
+}
+
+/* Features Section */
+.features-section {
+    padding: 6rem 2rem;
+    background: rgba(255, 0, 170, 0.02);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: rgba(0, 191, 255, 0.05);
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card:hover {
+    border-color: #00BFFF;
+    background: rgba(0, 191, 255, 0.1);
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 191, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.feature-card:hover::before {
+    left: 100%;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    filter: grayscale(1) brightness(0.8);
+}
+
+.feature-card h3 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8rem;
+    color: #00BFFF;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: #9CA3AF;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.feature-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.detail-item {
+    font-size: 0.7rem;
+    color: #FF00AA;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Technical Section */
+.technical-section {
+    padding: 6rem 2rem;
+    background: rgba(0, 191, 255, 0.02);
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tech-item {
+    background: rgba(0, 191, 255, 0.05);
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    border-color: #00BFFF;
+    background: rgba(0, 191, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+.tech-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    filter: grayscale(1) brightness(0.8);
+}
+
+.tech-item h3 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8rem;
+    color: #00BFFF;
+    margin-bottom: 1.5rem;
+}
+
+.tech-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.spec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background: rgba(0, 191, 255, 0.05);
+    border: 1px solid rgba(0, 191, 255, 0.2);
+}
+
+.spec-label {
+    font-size: 0.8rem;
+    color: #9CA3AF;
+    text-transform: uppercase;
+}
+
+.spec-value {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    color: #FF00AA;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.1), rgba(255, 0, 170, 0.1));
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.5rem;
+    color: #00BFFF;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 15px #00BFFF;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    color: #9CA3AF;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.secondary-button {
+    background: transparent;
+    border: 2px solid #9CA3AF;
+    color: #9CA3AF;
+    padding: 1rem 2rem;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.secondary-button:hover {
+    border-color: #00BFFF;
+    color: #00BFFF;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 1rem 2rem;
+    }
+    
+    .process-flow {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .steps-section,
+    .features-section,
+    .technical-section,
+    .cta-section {
+        padding: 4rem 1rem;
+    }
+    
+    .step-detailed {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .step-detailed:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+    
+    .step-detailed:nth-child(even) .step-visual,
+    .step-detailed:nth-child(even) .step-description {
+        order: unset;
+    }
+    
+    .step-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .step-number-large {
+        font-size: 2rem;
+    }
+    
+    .features-grid,
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .secondary-button,
+    .vault-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}

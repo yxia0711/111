@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Data Vault - Home</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="pixel-text">THE DATA VAULT</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="how-it-works.html" class="nav-link">HOW IT WORKS</a>
+                <a href="security.html" class="nav-link">SECURITY</a>
+                <a href="join.html" class="nav-link">JOIN</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="pixel-background">
+                    <div class="loading-bar">
+                        <div class="loading-progress"></div>
+                    </div>
+                    <div class="pixel-grid"></div>
+                    <div class="floating-particles"></div>
+                </div>
+                <div class="hero-content">
+                    <h1 class="main-title">Protect your data.<br>Unlock your control.</h1>
+                    <p class="hero-subtitle">The ultimate digital fortress for your personal information</p>
+                    <button class="vault-button" onclick="showMessage()">
+                        <span class="button-text">ENTER THE VAULT</span>
+                        <div class="button-glow"></div>
+                    </button>
+                    <div class="terminal-output" id="terminal-output"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Preview Section -->
+        <section class="features-preview">
+            <div class="container">
+                <h2 class="section-title">WHY CHOOSE THE VAULT?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔐</div>
+                        <h3>Military-Grade Encryption</h3>
+                        <p>Your data is protected with AES-256 encryption. Probably.</p>
+                        <div class="feature-stats">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Security Rating</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Lightning Fast</h3>
+                        <p>Upload and access your data in milliseconds. Sometimes.</p>
+                        <div class="feature-stats">
+                            <span class="stat-number">0.001s</span>
+                            <span class="stat-label">Average Response</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h3>Global Access</h3>
+                        <p>Access your vault from anywhere in the world. Maybe.</p>
+                        <div class="feature-stats">
+                            <span class="stat-number">195</span>
+                            <span class="stat-label">Countries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Statistics Section -->
+        <section class="data-stats">
+            <div class="container">
+                <h2 class="section-title">YOUR DIGITAL FOOTPRINT</h2>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-visual">
+                            <div class="data-bar" data-percentage="85"></div>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">2.5TB</span>
+                            <span class="stat-label">Average Data Per User</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-visual">
+                            <div class="data-bar" data-percentage="92"></div>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">47</span>
+                            <span class="stat-label">Apps Tracking You</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-visual">
+                            <div class="data-bar" data-percentage="78"></div>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number">$312</span>
+                            <span class="stat-label">Your Data's Value</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="terminal-message">
+                    <span class="prompt-cursor">></span>
+                    <span class="prompt-text">Every click uploads your life. We're here to help.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">WHAT USERS SAY</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Finally, a place where my data feels safe. Or at least safer than Facebook."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/3.jpg" alt="User" class="author-image">
+                            <div class="author-info">
+                                <span class="author-name">Sarah Chen</span>
+                                <span class="author-title">Data Analyst</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The vault gives me peace of mind. My passwords are probably secure now."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/4.jpg" alt="User" class="author-image">
+                            <div class="author-info">
+                                <span class="author-name">Mike Rodriguez</span>
+                                <span class="author-title">Software Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"I sleep better knowing my data is encrypted. Hopefully."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/5.png" alt="User" class="author-image">
+                            <div class="author-info">
+                                <span class="author-name">Emma Thompson</span>
+                                <span class="author-title">Privacy Advocate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Secure Your Digital Life?</h2>
+                    <p>Join millions of users who trust The Data Vault with their most sensitive information.</p>
+                    <div class="cta-buttons">
+                        <a href="join.html" class="vault-button">
+                            <span class="button-text">START FREE TRIAL</span>
+                            <div class="button-glow"></div>
+                        </a>
+                        <a href="how-it-works.html" class="secondary-button">
+                            <span class="button-text">LEARN MORE</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
